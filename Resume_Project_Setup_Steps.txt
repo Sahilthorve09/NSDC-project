@@ -1,0 +1,71 @@
+RESUME CLASSIFICATION PROJECT - COMPLETE SETUP & RUNNING STEPS
+
+STEP 1: Open Project Folder in VS Code
+
+1.  Open Visual Studio Code
+2.  Click on File → Open Folder
+3.  Select your project folder: Resume_Classification_project
+
+STEP 2: Open Terminal in VS Code
+
+Click on: Terminal → New Terminal
+
+STEP 3: Create Virtual Environment
+
+Run the following command:
+
+python -m venv venv
+
+STEP 4: Activate Virtual Environment
+
+Run:
+
+venv
+
+After activation, you should see: (venv) in your terminal
+
+STEP 5: Install Requirements File
+
+Run:
+
+pip install -r requirements.txt
+
+STEP 6: Install SpaCy English Model
+
+Run:
+
+python -m spacy download en_core_web_sm
+
+STEP 7: Download Required NLTK Data
+
+Run:
+
+python
+
+Then type the following inside Python:
+
+import nltk nltk.download(‘stopwords’) nltk.download(‘punkt’)
+nltk.download(‘wordnet’) nltk.download(‘omw-1.4’)
+nltk.download(‘averaged_perceptron_tagger’)
+
+After successful download, exit python:
+
+exit()
+
+STEP 8: Run Streamlit App
+
+Run:
+
+streamlit run app.py
+
+OUTPUT
+
+Your browser will open automatically at: http://localhost:8501
+
+If ‘streamlit not found’ error occurs, run:
+
+pip install streamlit
+
+Then again run:
+
+streamlit run app.py

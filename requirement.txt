@@ -1,0 +1,5 @@
+pip install streamlit pandas numpy scikit-learn matplotlib
+pip install spacy nltk click docx2txt pdfplumber PyPDF2 requests
+
+
+python -m spacy download en_core_web_sm
